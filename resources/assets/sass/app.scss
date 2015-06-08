@@ -1,0 +1,59 @@
+@import "materialize";
+@import "variables";
+
+.padder-sides-sm{
+  padding-left:5%;
+  padding-right: 5%;
+}
+.padder-sides-md{
+  padding-left:10%;
+  padding-right: 10%;
+}
+.padder-sides-lg{
+  padding-left:15%;
+  padding-right: 15%;
+}
+.padder-xs{
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+}
+.padder-sm{
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.padder-md{
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.padder-lg{
+  padding-top:20%;
+  padding-bottom:20%;
+}
+.bg-success{
+  background-color: $success;
+  color: $white;
+}
+.bg-white{
+  background-color: $white;
+}
+.bg-info{
+  background-color: $info;
+}
+.bg-black{
+  background-color: $black;
+}
+.bg-blue-grey{
+  background-color: #72949B;
+}
+.bg-grey{
+  background-color: #F0F0F0;
+}
+.bg-primary{
+  background-color: $primary;
+}
+
+.btn-block{
+  width:100%
+}
