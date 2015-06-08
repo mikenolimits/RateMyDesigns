@@ -15,7 +15,8 @@
 	  "intervention/imagecache": "dev-master",
 	  "laracasts/generators": "dev-master",
 	  "mjarestad/filtry": "dev-master",
-	  "fzaninotto/faker": "dev-master"
+	  "fzaninotto/faker": "dev-master",
+	  "predis/predis" : "1.0.1"
 	},
 	"require-dev": {
 		"phpunit/phpunit": "~4.0",
