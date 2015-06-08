@@ -12,6 +12,7 @@ use App\Http\Requests\DesignRequest;
 use App\Repositories\DesignsRepository;
 use Request;
 use Storage;
+use Image;
 class DesignsController extends Controller
 {
 
@@ -72,7 +73,9 @@ class DesignsController extends Controller
         $fileName     = 'images/' . $hash;
         $realPath     = $file->getRealPath();
 
-        $storage->put($fileName,\File::get($realPath));
+        Image::make($realPath)->resize(400,400)->save($fileName);
+
+        //$storage->put($fileName,\File::get($realPath));
 
         $data = Request::input();
         $data['image']   = $fileName;
