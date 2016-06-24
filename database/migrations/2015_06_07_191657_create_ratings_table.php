@@ -20,7 +20,8 @@ class CreateRatingsTable extends Migration
                 ->references('id')
                 ->on('designs')
                 ->onDelete('cascade');
-            $table->timestamps();
+                $table->timestamp('created_at')->nullable();
+                $table->timestamp('updated_at')->nullable();
         });
     }
 

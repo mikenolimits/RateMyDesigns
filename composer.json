@@ -5,7 +5,7 @@
 	"license": "MIT",
 	"type": "project",
 	"require": {
-		"laravel/framework": "5.0.*",
+		"laravel/framework": "5.1.*",
 	  "barryvdh/laravel-ide-helper": "~2.0",
 	  "laravelcollective/html": "~5.0",
 	  "php-ffmpeg/php-ffmpeg": "~0.5",
@@ -14,7 +14,7 @@
 	  "intervention/image": "dev-master",
 	  "intervention/imagecache": "dev-master",
 	  "laracasts/generators": "dev-master",
-	  "mjarestad/filtry": "dev-master",
+	  "mjarestad/filtry": "1.0.3",
 	  "fzaninotto/faker": "dev-master",
 	  "predis/predis" : "1.0.1"
 	},

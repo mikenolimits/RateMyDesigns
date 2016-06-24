@@ -14,16 +14,16 @@
     @foreach (array_chunk($designs->getCollection()->toArray(), 3) as $designRow)
         <div class="row padder-sm">
         @foreach ($designRow  as $design)
-            <div class="col m4 card medium">
+            <div class="col m4 card-panel medium flow-text">
                 <div class="card-image">
-                    <img class="responsive-img" src="{{Request::root()}}/{{$design['image']}}"/>
-                    <span class="card-title black-text teal">{{$design['name']}}</span>
+                    <img class="responsive-image materialboxed" data-caption="{{$design['description']}}" width="400" src="{{Request::root()}}/{{$design['image']}}"/>
+                    <h3 class="card-title black-text amber">{{$design['name']}}</h3>
                 </div>
 
                 <div class="card-content">
                   <p>{{$design['description']}}</p>
                 </div>
-                <div class="card-action black-text">
+                <div class="card-action black-text padder-sm">
                     <p>
                     {!! Form::radio('design',$design['id'],false,['id' => $design['id'],'class' => 'black-text']) !!}
                     {!! Form::label($design['id'],$design['name']) !!}
@@ -51,7 +51,9 @@
         $(document).ready(function(){
             $('.parallax').parallax();
         });
-
+        $(document).ready(function(){
+            $('.materialboxed').materialbox();
+        });
     </script>
 
 @endsection

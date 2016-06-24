@@ -21,7 +21,8 @@ class CreateDesignsTable extends Migration
                 ->references('id')
                 ->on('users')
                 ->onDelete('cascade');
-            $table->timestamps();
+            $table->timestamp('created_at')->nullable();
+                $table->timestamp('updated_at')->nullable();
         });
     }
 
