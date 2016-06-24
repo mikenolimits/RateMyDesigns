@@ -1,6 +1,7 @@
 <?php namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Drapor\CacheRepository\Eloquent\BaseModel;
 
 class Design extends BaseModel {
 
