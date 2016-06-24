@@ -17,6 +17,7 @@
 	  "mjarestad/filtry": "1.0.3",
 	  "fzaninotto/faker": "dev-master",
 	  "predis/predis" : "1.0.1",
+	  	  "drapor/networking": "dev-master",
 	    "drapor/cache-repository": "dev-master"
 	},
 	"require-dev": {
@@ -52,5 +53,6 @@
 	},
 	"config": {
 		"preferred-install": "dist"
-	}
+	},
+	  "minimum-stability": "dev"
 }
