@@ -8,8 +8,9 @@
 
 namespace App\Repositories;
 use App\Models\Rating;
+use Drapor\CacheRepository\CacheRepository;
 
-class RatingsRepository extends Repository
+class RatingsRepository extends CacheRepository
 {
 
     public function __construct(Rating $rating){

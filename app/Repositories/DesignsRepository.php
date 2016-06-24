@@ -8,8 +8,9 @@
 
 namespace App\Repositories;
 use App\Models\Design;
+use Drapor\CacheRepository\CacheRepository;
 
-class DesignsRepository extends Repository
+class DesignsRepository extends CacheRepository
 {
 
     public function __construct(Design $design){
